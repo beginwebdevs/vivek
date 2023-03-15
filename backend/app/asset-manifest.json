@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4404d0bd.css",
+    "main.js": "/static/js/main.c26c6175.js",
+    "static/media/GT-Alpina-Standard-Thin-Italic.contenthash.63f1922b.woff2": "/static/media/GT-Alpina-Standard-Thin-Italic.contenthash.f347262985aba9a46f46d654136c01bb63f1922b.f8de3430543c40c46458.woff2",
+    "static/media/GT-Alpina-Standard-Thin.contenthash.e2038763.woff2": "/static/media/GT-Alpina-Standard-Thin.contenthash.906c3cbe3359790771f7028eee2134c5e2038763.ec268431deb43068d4ec.woff2",
+    "static/media/calibre_bold.contenthash.e5d2f726.woff2": "/static/media/calibre_bold.contenthash.fb1b4948b7493d5ff886f89761e4f4c3e5d2f726.00f0959b623a7d9de033.woff2",
+    "static/media/calibre_regular.contenthash.fabbf07c.woff2": "/static/media/calibre_regular.contenthash.96e3b1a24144c297ef23157e8fb82875fabbf07c.870139f4d7e4186bdf55.woff2",
+    "static/media/calibre_medium.contenthash.b23b0535.woff2": "/static/media/calibre_medium.contenthash.ec2b939a0f8c1359167f7617ae951c6db23b0535.c1e6e9730de6ca5e3430.woff2",
+    "static/media/bg.svg": "/static/media/bg.d2dc09531e89d30c9811.svg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.4404d0bd.css.map": "/static/css/main.4404d0bd.css.map",
+    "main.c26c6175.js.map": "/static/js/main.c26c6175.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4404d0bd.css",
+    "static/js/main.c26c6175.js"
+  ]
+}
