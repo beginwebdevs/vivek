@@ -20,9 +20,7 @@ app.use(express.json({limit: '8mb'}));
 app.use(routes);
 
 
-app.get('/', (req, res) => {
-    res.send('api workin')
-})
+app.use('/', express.static('app'))
 
 
 
