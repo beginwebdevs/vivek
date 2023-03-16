@@ -15,12 +15,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: ['http://localhost:3000', 'https://vivekf.beginweb.in'] }));
 app.use(express.json({limit: '8mb'}));
 app.use(routes);
 
 
-app.use('/', express.static('app'))
+app.get('/', (req, res) => {
+    res.send('vivek apis');
+})
 
 
 
