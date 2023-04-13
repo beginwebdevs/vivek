@@ -33,7 +33,10 @@ const questionSchema = new Schema({
                 required: false
             }
         }
-    ]
+    ],
+    list_index: {
+        type: Number
+    }
 })
 
 const Questions = mongoose.model('Questions', questionSchema);
