@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const QuestionController = require('./controllers/questionController');
 const ReportControllers = require('./controllers/reportsController');
-const AdminsController = require('./controllers/adminsController');
+//const AdminsController = require('./controllers/adminsController');
 
 //question route
 router.post('/api/question/create', QuestionController.createQuestion);
