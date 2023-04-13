@@ -18,7 +18,7 @@ router.get('/api/report/willingness', ReportControllers.getWillingnessScore);
 
 
 //admins route
-// router.post('/api/admin/create', AdminsController.create)
-// router.post('/api/admin/verify', AdminsController.verify)
+router.post('/api/admin/create', AdminsController.create)
+router.post('/api/admin/verify', AdminsController.verify)
 
 module.exports = router;
