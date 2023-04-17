@@ -1,6 +1,7 @@
 const Admins = require('../models/AdminsModels');
 const jwt = require('jsonwebtoken');
 const Tokens = require('../models/TokenModels')
+const bcryptjs = require('bcryptjs')
 
 const accessTokenSecrete = 'b24cd70fa9134d5019250ccc9e43e223aea3974dab998c870cf42f4ddf3b14745cbaf3fe9c8a5a7eedf74c5dc48b84d641d07a90f09bb4a568c7f6e47a5f437b';
 const refreshTokenSecrete = 'df67b54b8e77a814b5b3dea73f78a7a5bb216f744d5dc9e98b769e4718c5da641beff1c29863398afef1f740a1eb573916107a9a80bbc986703fc8375aa12582';
