@@ -23,7 +23,7 @@ app.use(routes);
 
 
 app.get('/', (req, res) => {
-    res.send('backend update');
+    res.send('backend update 2');
 })
 
 

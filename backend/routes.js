@@ -16,7 +16,7 @@ router.put('/api/question/update/:id', QuestionController.updateQuestion);
 router.post('/api/report/create', ReportControllers.create);
 router.get('/api/report/ability', ReportControllers.getAbilityScore);
 router.get('/api/report/get', ReportControllers.getReport);
-router.get('/api/report/get', ReportControllers.get);
+router.get('/api/report/all', ReportControllers.getRp);
 router.get('/api/reports/id', ReportControllers.getById);
 router.post('/api/report/update', ReportControllers.update);
 router.delete('/api/report/delete/:id', ReportControllers.delete)

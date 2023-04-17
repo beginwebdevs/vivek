@@ -31,7 +31,8 @@ class ReportControllers {
 
     
 
-    async get (req, res) {
+    async getRp(req, res) {
+       
         const reports = await Reports.find()
         res.json(reports)
     }

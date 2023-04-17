@@ -1,5 +1,4 @@
 const Admins = require('../models/AdminsModels');
-const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken');
 const Tokens = require('../models/TokenModels')
 
