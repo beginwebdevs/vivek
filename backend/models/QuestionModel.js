@@ -36,6 +36,9 @@ const questionSchema = new Schema({
     ],
     list_index: {
         type: Number
+    },
+    why:{
+        type: String
     }
 })
 
