@@ -16,7 +16,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-app.use(cors({ credentials: true, origin: ['https://vivekf.beginweb.in', 'http://localhost:3000', 'https://vadmin.beginweb.in'] }));
+app.use(cors({ credentials: true }));
 app.use(express.json({limit: '8mb'}));
 app.use(cookieParser())
 app.use(routes);
