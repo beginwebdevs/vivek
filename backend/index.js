@@ -15,23 +15,17 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-const whitelist = ['https://vivekf.beginweb.in', 'http://localhost:3000', 'https://vadmin.beginweb.in'];
 
 
-app.use(cors({ credentials: true, origin: (origin, callback) => {
-    if(whitelist.indexOf(origin) !== -1 || !origin){
-        callback(null, true)
-    }else{
-        callback(new Error('Not allowe by cors'))
-    }
-} }));
+
+app.use(cors({ credentials: true, origin: '*' }));
 app.use(express.json({limit: '8mb'}));
 app.use(cookieParser())
 app.use(routes);
 
 
 app.get('/', (req, res) => {
-    res.send('backend update 2');
+    res.send('backend update 3');
 })
 
 
