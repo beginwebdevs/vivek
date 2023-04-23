@@ -20,7 +20,7 @@ class QuestionController {
 
     //get all question
     async getQuestions  (req, res) {
-       const questions = await Questions.find().sort({list_index: 1}).limit(10);
+       const questions = await Questions.find().sort({list_index: 1});
        res.json(questions);
     }
 

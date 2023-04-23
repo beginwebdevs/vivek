@@ -22,29 +22,30 @@ class UserController {
         });
         pdfDoc.end();
 
+        const testAccount = await nodemailer.createTestAccount();
 
-        //const transporter = nodemailer.createTransport({
-           // host: "smtp.hostinger.com",
-            //port: 465,
-          //  secure: true, // true for 465, false for other ports
-           // auth: {
-             // user: 'paraskr@beginwebstudio.com', // generated ethereal user
-           //   pass: 'Shiva@1937', // generated ethereal password
-           // }
-       // })
+        const transporter = nodemailer.createTransport({
+            host: "smtp.hostinger.com",
+            port: 465,
+            secure: true, // true for 465, false for other ports
+            auth: {
+              user: 'paraskr@beginwebstudio.com', // generated ethereal user
+              pass: 'Shiva@1937', // generated ethereal password
+            }
+        })
     
-       // const mailRes = await transporter.sendMail({
-          //  from: 'paraskr@beginwebstudio.com',
-           // to: req.body.email,
-           // subject: 'Report',
-           // text: `your report`,
-           // attachments: [
-             //   {
-            //        filename: 'report.pdf',
+        const mailRes = await transporter.sendMail({
+            from: 'paraskr@beginwebstudio.com',
+            to: req.body.email,
+            subject: 'Report',
+            text: `your report`,
+            attachments: [
+                {
+                    filename: 'report.pdf',
                     path: fileName
-               // }
-           // ]
-      //  })
+                }
+            ]
+        })
 
 
         const data = {

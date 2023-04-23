@@ -20,7 +20,7 @@ router.get('/api/report/all', ReportControllers.getRp);
 router.get('/api/reports/id', ReportControllers.getById);
 router.post('/api/report/update', ReportControllers.update);
 router.delete('/api/report/delete/:id', ReportControllers.delete)
-router.get('/api/report/dornload/:file', ReportControllers.download)
+router.get('/api/report/download/:file', ReportControllers.download)
 
 
 //admins route
