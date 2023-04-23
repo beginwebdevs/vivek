@@ -15,7 +15,7 @@ class UserController {
         const reportData = req.body.report;
         pdfDoc.pipe(fs.createWriteStream(fileName))
         reportData.contents.forEach(d => {
-            pdfDoc.fontSize(17).text(parse(d.heading));
+            pdfDoc.fontSize(17).text(d.heading);
             pdfDoc.fontSize(12).text(convert(d.description));
             
 
