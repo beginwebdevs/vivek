@@ -20,6 +20,7 @@ router.get('/api/report/all', ReportControllers.getRp);
 router.get('/api/reports/id', ReportControllers.getById);
 router.post('/api/report/update', ReportControllers.update);
 router.delete('/api/report/delete/:id', ReportControllers.delete)
+router.get('/api/report/dornload/:file', ReportControllers.download)
 
 
 //admins route
@@ -32,6 +33,8 @@ router.get('/api/admin/auto', AdminsController.auto)
 router.post('/api/user/create', UserController.create);
 router.get('/api/user/get', UserController.get);
 router.delete('/api/user/delete/:id', UserController.delete);
+router.post('/api/user/notify/:id', UserController.notify)
+
 
 
 module.exports = router;

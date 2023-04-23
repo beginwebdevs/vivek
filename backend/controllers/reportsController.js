@@ -1,4 +1,5 @@
 const Reports = require('../models/ReportsModel');
+const path = require('path');
 
 class ReportControllers {
     async create(req, res) {
@@ -51,6 +52,12 @@ class ReportControllers {
     async delete (req, res) {
         const resp = await Reports.findOneAndDelete({_id: req.params.id});
         res.json(resp)
+    }
+
+    async download(req, res) {
+        console.log(req.params.file);
+        res.download(path.join('storage', 'reports', req.params.file))
+        //res.end()
     }
 }
 

@@ -82,7 +82,16 @@ class AdminsController {
     async auto(req, res) {
         const {accessToken, refreshToken: refreshTokenFromCookie} = req.cookies;
         if(accessToken){
-            const adminData = jwt.verify(accessToken, accessTokenSecrete)
+            let adminData;
+            try {
+
+                adminData = jwt.verify(accessToken, accessTokenSecrete)
+                
+            } catch (error) {
+                console.log(error)
+                return res.status(400).json({message: "Token Expired"});
+            }
+        
         if(adminData){
             let admin = await Admins.findOne({_id: adminData._id});
             return res.json({status: true, admin, message: "Logged in."})
