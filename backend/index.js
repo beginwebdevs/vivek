@@ -26,7 +26,7 @@ app.use(routes);
 
 
 app.get('/', (req, res) => {
-    res.send('23/4');
+    res.send('23/4(1)');
 })
 
 
