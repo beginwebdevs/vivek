@@ -22,7 +22,6 @@ class UserController {
         });
         pdfDoc.end();
 
-        const testAccount = await nodemailer.createTestAccount();
 
         const transporter = nodemailer.createTransport({
             host: "smtp.hostinger.com",
