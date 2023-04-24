@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4404d0bd.css",
-    "main.js": "/static/js/main.c26c6175.js",
+    "main.css": "/static/css/main.925e2ade.css",
+    "main.js": "/static/js/main.db81ea72.js",
     "static/media/GT-Alpina-Standard-Thin-Italic.contenthash.63f1922b.woff2": "/static/media/GT-Alpina-Standard-Thin-Italic.contenthash.f347262985aba9a46f46d654136c01bb63f1922b.f8de3430543c40c46458.woff2",
     "static/media/GT-Alpina-Standard-Thin.contenthash.e2038763.woff2": "/static/media/GT-Alpina-Standard-Thin.contenthash.906c3cbe3359790771f7028eee2134c5e2038763.ec268431deb43068d4ec.woff2",
     "static/media/calibre_bold.contenthash.e5d2f726.woff2": "/static/media/calibre_bold.contenthash.fb1b4948b7493d5ff886f89761e4f4c3e5d2f726.00f0959b623a7d9de033.woff2",
@@ -12,11 +12,11 @@
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.4404d0bd.css.map": "/static/css/main.4404d0bd.css.map",
-    "main.c26c6175.js.map": "/static/js/main.c26c6175.js.map"
+    "main.925e2ade.css.map": "/static/css/main.925e2ade.css.map",
+    "main.db81ea72.js.map": "/static/js/main.db81ea72.js.map"
   },
   "entrypoints": [
-    "static/css/main.4404d0bd.css",
-    "static/js/main.c26c6175.js"
+    "static/css/main.925e2ade.css",
+    "static/js/main.db81ea72.js"
   ]
 }
