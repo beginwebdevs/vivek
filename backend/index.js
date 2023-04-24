@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const cookieParser = require('cookie-parser')
-const path = require('path')
+
 
 
 const cors = require('cors');
@@ -27,7 +27,7 @@ app.use(routes);
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join('app', 'index.html'))
+    res.send('New')
 })
 
 
