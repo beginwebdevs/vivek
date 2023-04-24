@@ -25,8 +25,8 @@ app.use(cookieParser())
 app.use(routes);
 
 
-app.use('/', express.static('app'))
-app.get('/*', (req, res) => {
+
+app.get('/', (req, res) => {
     res.sendFile(path.join('app', 'index.html'))
 })
 
