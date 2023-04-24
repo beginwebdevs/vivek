@@ -8,7 +8,6 @@ const { convert } = require('html-to-text');
 class UserController {
     async create (req, res) {
        
-
         //creating & saving documents
         const fileName = path.join('storage', 'reports',  `${Date.now()}.pdf`);
         const pdfDoc = new PDFDocument();
@@ -17,8 +16,6 @@ class UserController {
         reportData.contents.forEach(d => {
             pdfDoc.fontSize(17).text(d.heading);
             pdfDoc.fontSize(12).text(convert(d.description));
-            
-
         });
         pdfDoc.end();
 

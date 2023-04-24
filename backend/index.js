@@ -24,10 +24,7 @@ app.use(cookieParser())
 app.use(routes);
 
 
-
-app.get('/', (req, res) => {
-    res.send('23/4');
-})
+app.use('/', express.static('app'))
 
 
 
