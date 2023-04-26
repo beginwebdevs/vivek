@@ -9,7 +9,7 @@ class UserController {
     async create (req, res) {
        
         //creating & saving documents
-        const fileName = path.join('storage', 'reports',  `${Date.now()}.pdf`);
+        const fileName =  `./reports/${Date.now()}.pdf`;
         const pdfDoc = new PDFDocument();
         const reportData = req.body.report;
         pdfDoc.pipe(fs.createWriteStream(fileName))
@@ -19,7 +19,7 @@ class UserController {
         });
         pdfDoc.end();
 
-        const testAccount = await nodemailer.createTestAccount();
+        
 
         const transporter = nodemailer.createTransport({
             host: "smtp.hostinger.com",
