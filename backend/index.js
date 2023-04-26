@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const cookieParser = require('cookie-parser')
-
+const path = require('path')
 
 
 const cors = require('cors');
@@ -25,16 +25,14 @@ app.use(cookieParser())
 app.use(routes);
 
 
-
 app.get('/', (req, res) => {
-    res.send('New')
+    res.send('2604')
 })
 
 
 
 
-
-mongoose.connect(process.env.MONGOURL).then(() => {
+mongoose.connect('mongodb+srv://vivek:12345@vivekfinance.hhtajvp.mongodb.net/?retryWrites=true&w=majority').then(() => {
 
 app.listen(PORT, () => {
     console.log('app is listening')
